@@ -24,6 +24,22 @@
           "fontWeight": "600",
           "lineHeight": "1.2"
         }
+      },
+      "link": {
+        "color": {
+          "text": "#ffffff"
+        },
+        "typography": {
+          "textDecoration": "none"
+        },
+        ":hover": {
+          "color": {
+            "text": "#0057B5"
+          },
+          "typography": {
+            "textDecoration": "underline"
+          }
+        }
       }
     }
   },
