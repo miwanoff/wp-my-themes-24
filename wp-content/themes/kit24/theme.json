@@ -31,18 +31,55 @@
       },
       "link": {
         "color": {
-          "text": "#ffffff"
+          "text": "#0693E2"
         },
         "typography": {
           "textDecoration": "none"
         },
         ":hover": {
           "color": {
-            "text": "#0057B5"
+            "text": "#0074b7"
           },
           "typography": {
             "textDecoration": "underline"
           }
+        }
+      },
+      "button": {
+        ":active": {
+          "color": {
+            "background": "blue"
+          }
+        },
+        ":focus": {
+          "color": {
+            "background": "#0074b7"
+          }
+        },
+        ":hover": {
+          "color": {
+            "background": "#0074b7"
+          }
+        },
+        "border": {
+          "radius": "10px"
+        },
+        "color": {
+          "background": "#1398E5",
+          "text": "white"
+        },
+        "spacing": {
+          "padding": {
+            "bottom": "0.6rem",
+            "left": "1rem",
+            "right": "1rem",
+            "top": "0.6rem"
+          }
+        },
+        "typography": {
+          "fontSize": "16px",
+          "fontStyle": "normal",
+          "fontWeight": "500"
         }
       }
     }
