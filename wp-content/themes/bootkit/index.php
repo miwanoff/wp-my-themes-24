@@ -10,14 +10,7 @@
 
     <title>Modern Business - Start Bootstrap Template</title>
 
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <?php wp_head(); ?>
 
 </head>
 
@@ -94,21 +87,24 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('images/slide1.jpg')">
+                <div class="carousel-item active"
+                    style="background-image: url('<?php bloginfo('template_directory')?>/assets/images/slide1.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>First Slide</h3>
                         <p>This is a description for the first slide.</p>
                     </div>
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('images/slide2.jpg')">
+                <div class="carousel-item"
+                    style="background-image: url('<?php bloginfo('template_directory')?>/assets/images/slide2.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Second Slide</h3>
                         <p>This is a description for the second slide.</p>
                     </div>
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('images/slide3.jpg')">
+                <div class="carousel-item"
+                    style="background-image: url('<?php bloginfo('template_directory')?>/assets/images/slide3.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Third Slide</h3>
                         <p>This is a description for the third slide.</p>
@@ -304,8 +300,7 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <?php wp_footer();?>
 
 </body>
 
