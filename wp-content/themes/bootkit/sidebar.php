@@ -1,8 +1,10 @@
                     <!-- Sidebar Widgets Column -->
                     <div class="col-md-4">
-
+                        <?php if (is_active_sidebar('bootkit_sidebar')) {
+    dynamic_sidebar('bootkit_sidebar');
+}?>
                         <!-- Search Widget -->
-                        <div class="card mb-4">
+                        <!-- <div class="card mb-4">
                             <h5 class="card-header">Search</h5>
                             <div class="card-body">
                                 <div class="input-group">
@@ -12,10 +14,10 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Categories Widget -->
-                        <div class="card my-4">
+                        <!-- <div class="card my-4">
                             <h5 class="card-header">Categories</h5>
                             <div class="card-body">
                                 <div class="row">
@@ -47,15 +49,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Side Widget -->
-                        <div class="card my-4">
+                        <!-- <div class="card my-4">
                             <h5 class="card-header">Side Widget</h5>
                             <div class="card-body">
                                 You can put anything you want inside of these side widgets. They are easy to use, and
                                 feature the
                                 new Bootstrap 4 card containers!
                             </div>
-                        </div>
+                        </div> -->
                     </div>
