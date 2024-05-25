@@ -57,6 +57,15 @@ if (has_post_thumbnail()) {
             <?php the_tags('', ', ');?>
             <hr>
             <?php }?>
+
+            <?php
+$defaults = array(
+            'before' => '<div class="row justify-content-center align-items-center">' . __('Pages:'),
+            'after' => '</div>',
+        );
+        wp_link_pages($defaults);
+        edit_post_link();
+        ?>
             <!-- Comments Form -->
 
             <div class="card my-4">
