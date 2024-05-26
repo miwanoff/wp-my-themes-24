@@ -27,3 +27,9 @@ add_action('widgets_init', 'bootkit_widgets');
 // function posts_link_attributes() {
 //   return 'class="page-link"';
 // }
+
+// function added_footer()
+// {
+//     echo 'Added to footer by hook-example plugin';
+// }
+// add_action('wp_footer', 'added_footer');
