@@ -5,7 +5,7 @@
 
 function hooked_title($title)
 {
-    return '&heart; ' . $title;
+    return '&#9829; ' . $title;
 }
 
 add_filter('the_title', 'hooked_title');

@@ -8,13 +8,13 @@ get_header();?>
     <h1 class="mt-4 mb-3">Blog Home One
         <small>Subheading</small>
     </h1>
-
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
         <li class="breadcrumb-item">
             <a href="index.html">Home</a>
         </li>
         <li class="breadcrumb-item active">Blog Home 1</li>
-    </ol>
+    </ol> -->
+    <?php breadcrumbs(); ?>
 
     <div class="row">
 

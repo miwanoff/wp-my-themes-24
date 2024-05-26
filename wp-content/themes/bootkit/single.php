@@ -9,13 +9,13 @@ get_header();?>
         <small>Subheading</small>
     </h1> -->
 
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
         <li class="breadcrumb-item">
             <a href="index.html">Home</a>
         </li>
         <li class="breadcrumb-item active">Blog Home 1</li>
-    </ol>
-
+    </ol> -->
+    <?php breadcrumbs();?>
     <div class="row">
 
         <!-- Post Content Column -->
@@ -106,7 +106,7 @@ if ($rp_query->have_posts()) {
         $rp_query->the_post();
         ?>
                 <div class="mpost clearfix">
-                    <h5><?php  the_category(); ?></h5>
+                    <h5><?php the_category();?></h5>
                     <?php
 if (has_post_thumbnail()) {
             ?>
@@ -138,18 +138,19 @@ if (has_post_thumbnail()) {
                 <?php
 }
     wp_reset_postdata();
-    $query = new WP_Query( [ 'category_name' => 'news' ] );
-    while ( $query->have_posts() ) {
-        $query->the_post(); ?>
+    $query = new WP_Query(['category_name' => 'news']);
+    while ($query->have_posts()) {
+        $query->the_post();?>
                 <!-- <ul> -->
                 <li> <a href="<?php the_permalink();?>">
                         <?php the_title();?>
                     </a></li>
                 <!-- </ul> -->
 
-                <?php                  }
-                             }
-                ?>
+                <?php
+}
+}
+?>
             </div>
         </div>
 
