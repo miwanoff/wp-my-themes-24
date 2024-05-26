@@ -21,6 +21,7 @@ add_action('widgets_init', 'bootkit_widgets');
 
 
 
+// Adds & Odds
 
 // add_filter('next_posts_link_attributes', 'posts_link_attributes');
 // add_filter('previous_posts_link_attributes', 'posts_link_attributes');
@@ -33,3 +34,15 @@ add_action('widgets_init', 'bootkit_widgets');
 //     echo 'Added to footer by hook-example plugin';
 // }
 // add_action('wp_footer', 'added_footer');
+
+// function my_footer()
+// {
+//     do_action('wp_hook_footer');
+// }
+// add_action('wp_footer', 'my_footer');
+
+// function hello_footer()
+// {
+//     echo 'Hello';
+// }
+// add_action('wp_hook_footer', 'hello_footer');
