@@ -19,7 +19,11 @@ add_action('widgets_init', 'bootkit_widgets');
 
 // Shortcodes
 
-
+function foobar_func($atts)
+{
+    return "<h4>foo and bar</h4>";
+}
+add_shortcode('foobar', 'foobar_func');
 
 // Adds & Odds
 
