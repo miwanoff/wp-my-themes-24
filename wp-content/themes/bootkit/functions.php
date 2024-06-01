@@ -25,6 +25,17 @@ function foobar_func($atts)
 }
 add_shortcode('foobar', 'foobar_func');
 
+// [kitlink link="foo-value"]
+
+function kitlink_func($atts) {
+    extract( shortcode_atts( array(
+        'link' => 'https://kitit.com.ua/',
+        'description' => "Навчальний центр комп'ютерних технологій",
+    ), $atts));
+    return "<h4>{$description}</h4> <a href='{$link}'>{$link}</a>";
+  }
+  add_shortcode( 'kitlink', 'kitlink_func');
+
 // Adds & Odds
 
 // add_filter('next_posts_link_attributes', 'posts_link_attributes');
