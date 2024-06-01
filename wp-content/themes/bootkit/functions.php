@@ -69,3 +69,15 @@ add_shortcode('myurl', 'site_url_shortcode');
 //     echo 'Hello';
 // }
 // add_action('wp_hook_footer', 'hello_footer');
+
+// Ajax
+
+function bootkit_ajax()
+{
+    $summa = $_POST['param1'] + $_POST['param2'];
+    echo $summa;
+    die;
+}
+
+add_action('wp_ajax_bootkit', 'bootkit_ajax');
+add_action('wp_ajax_nopriv_bootkit', 'bootkit_ajax');

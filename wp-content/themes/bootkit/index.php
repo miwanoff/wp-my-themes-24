@@ -14,7 +14,8 @@ get_header();?>
         </li>
         <li class="breadcrumb-item active">Blog Home 1</li>
     </ol> -->
-    <?php breadcrumbs(); ?>
+    <?php /* breadcrumbs(); */ ?>
+    <?php echo do_shortcode('[breadcrumbs]'); ?>
 
     <div class="row">
 
