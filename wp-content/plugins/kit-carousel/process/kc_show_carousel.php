@@ -50,7 +50,7 @@ function kc_show_carousel($content)
     $args = [
         'post_type' => 'post',
         'showposts' => 6,
-        //'category_name' => 'cooking',
+        'category_name' => 'news',
         //'post_type' => 'recipe',
         // 'post_type' => 'movies',
         //'tag' => 'cooking',
@@ -78,6 +78,6 @@ function kc_show_carousel($content)
 </div>
 </section>';
     }
-
+    wp_reset_postdata();
     return $content . $html;
 }
