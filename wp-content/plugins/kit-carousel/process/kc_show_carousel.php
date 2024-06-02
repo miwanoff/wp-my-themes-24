@@ -48,10 +48,12 @@ function kc_show_carousel($content)
     // </section>';
 
     $args = [
-        'post_type' => 'post',
-       // 'showposts' => 6,
-       'showposts' => get_option('kc_count'),
-        'category_name' => 'news',
+        'post_type' => get_option('kc_post_type') ? get_option('kc_post_type') : 'post',
+
+        // 'showposts' => 6,
+        'showposts' => get_option('kc_count'),
+        //'category_name' => 'news',
+        'category_name' => get_option('kc_category_name') ? get_option('kc_category_name') : 'news',
         //'post_type' => 'recipe',
         // 'post_type' => 'movies',
         //'tag' => 'cooking',
